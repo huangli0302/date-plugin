@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/jquery-1.7.2.js"></script>
+</head>
+<body>
+
+  <div id="calendar">
+    <header class="header" style="display:none">
+      <ul>
+        <li class="cur">月</li>
+         <li>年</li>
+      </ul>
+    </header> 
+    <div class="container">
+      <div id="renderMonth" class="render render-show">
+        <h2 class="title"> <input type="button" value="<" class="btn year-prev">  <input type="text" value="" class="now-year" readonly><input type="button" value=">" class="btn year-next"></h2>
+        <ul class="week">
+          <li>周日</li>
+          <li>周一</li>
+          <li>周二</li>
+          <li>周三</li>
+          <li>周四</li>
+          <li>周五</li>
+          <li>周六</li>
+        </ul>
+        <ul class="day"></ul>
+      </div>
+      <div id="control">
+        <input type="button" value="<" class="btn btn-prev">
+        <input type="text" value="" class="now-month" readonly>
+        <input type="button" value=">" class="btn btn-next">
+        <input type="button" value="今天" class="today">
+      </div>
+    </div>
+    <div style="height:30px;line-height:30px;">
+        <span class="margin-r lf" style="font-size:20px;">设置为法定假日</span>
+        <span class="lf packButtonOpt">
+          <label class="el-switch el-switch-blue">
+                  <input type="checkbox" name="switch" id="switch">
+                  <span class="el-switch-style"></span>
+              </label>
+        </span>   
+    </div>
+  </div>
+  
+
+  <script src="js/tools.js"></script>
+  <script src="js/ChineseCalendar.js"></script>
+  <script src="js/calender.js"></script>
+</body>
+</html>
